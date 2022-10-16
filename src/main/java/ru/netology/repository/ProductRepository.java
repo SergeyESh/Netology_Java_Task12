@@ -3,11 +3,8 @@ package ru.netology.repository;
 import ru.netology.domain.AlreadyExistsException;
 import ru.netology.domain.NotFoundException;
 import ru.netology.domain.Product;
-import ru.netology.domain.ProductManager;
 
 public class ProductRepository {
-
-    private ProductManager manager;
 
     private Product[] items = new Product[0];
 
@@ -54,6 +51,4 @@ public class ProductRepository {
     public Product[] getItems() {
         return items;
     }
-
-
 }
